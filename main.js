@@ -90,3 +90,6 @@ for (let i = 0; i < formData.length; i++) {
   input.setAttribute('options', formData[i].options);
   formHTML.appendChild(input);
 }
+
+let select = document.createElement('select');
+console.log(formData[4].options);
