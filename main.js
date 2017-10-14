@@ -78,3 +78,5 @@ let formData = [
     "options": []
   }
 ];
+
+let formHTML = document.getElementById('fields');
