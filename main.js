@@ -93,3 +93,13 @@ for (let i = 0; i < formData.length; i++) {
 
 let select = document.createElement('select');
 console.log(formData[4].options);
+
+for (let i = 0; i < formData[4].options.length; i++) {
+  formHTML.appendChild(select);
+  let optionsTag = document.createElement('option');
+  select.appendChild(optionsTag);
+  console.log('label',formData[4].options[i].label);
+  console.log('value', formData[4].options[i].value);
+  optionsTag.setAttribute('label',formData[4].options[i].label);
+  optionsTag.setAttribute('value', formData[4].options[i].value);
+}
