@@ -80,3 +80,13 @@ let formData = [
 ];
 
 let formHTML = document.getElementById('fields');
+
+for (let i = 0; i < formData.length; i++) {
+  let input = document.createElement('input');
+  input.setAttribute('type', formData[i].type);
+  input.setAttribute('placeholder', formData[i].label);
+  input.setAttribute('id', formData[i].id);
+  input.setAttribute('icon', formData[i].icon);
+  input.setAttribute('options', formData[i].options);
+  formHTML.appendChild(input);
+}
